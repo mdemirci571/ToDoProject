@@ -24,3 +24,22 @@ body {
   color: white;
   background-color: rgba(97, 35, 35, 0.833);
 }
+.container img {
+  width: 4rem;
+  height: 5rem;
+  margin: 1rem auto;
+}
+.giris {
+  /* display: flex;
+  justify-content: space-between; */
+  color: rgb(39, 39, 39);
+}
+
+footer {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  bottom: 0px;
+  color: rgb(39, 39, 39);
+  background-color: rgb(253, 200, 122);
+}
