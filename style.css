@@ -58,3 +58,12 @@ input:focus {
 label:hover {
   cursor: pointer;
 }
+
+.add {
+  padding: 1rem;
+  background-color: rgb(253, 200, 122);
+  border-radius: 10px;
+}
+h1 {
+  text-decoration: underline;
+}
