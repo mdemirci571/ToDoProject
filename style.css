@@ -1,0 +1,26 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(14, 14, 60);
+  position: relative;
+  /* display: flex;
+  flex-direction: column; */
+  height: 100vh;
+  font-size: 150%;
+}
+.container {
+  /* display: flex;
+  flex-direction: column; */
+  padding: 1rem;
+  margin: 6rem auto 0rem;
+  width: 60vw;
+  text-align: center;
+  color: white;
+  background-color: rgba(97, 35, 35, 0.833);
+}
