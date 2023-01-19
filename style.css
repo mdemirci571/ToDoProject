@@ -99,3 +99,22 @@ h1 {
   color: rgb(14, 14, 60);
 cursor: pointer;
 }
+
+button{
+  /* padding: 1.4rem 1rem; */
+  background-color: white;
+  border-radius: 10px; 
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 700;
+  margin-left: 0.5rem;
+  }
+  section{
+    margin-top: 2rem;
+    
+  }
+  section h3{
+    text-align: left;
+    margin-left: 1rem;
+  }
