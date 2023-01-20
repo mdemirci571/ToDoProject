@@ -33,5 +33,18 @@ addBtn.addEventListener("click", (e) => {
     }
     // else{
     //     alert("continue");
-    // }
-    
+    // 
+}
+    const currentDateTime = new Date().toLocaleString();
+  //continue func.
+  //?obje tanımladım
+  const newTodo = {
+    id: new Date().getMilliseconds(), //unique id with ms of now
+    completed: false, //status
+    //userInput
+    text: `"${currentDateTime}": ${todoInput.value}`,
+  };
+
+  //? objeyi createTodo fonksiyonuna gönderdim
+
+  createTodo(newTodo);
