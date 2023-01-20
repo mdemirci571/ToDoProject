@@ -103,3 +103,25 @@ const createTodo = (newTodo) => {
   // todoUl.append(li);
   todoUl.prepend(li);
 };
+
+//Capturing vs. Bubbling
+//static closest parent element => child
+todoUl.addEventListener("click", (e) => {
+    const idAttr = e.target.closest("li").getAttribute("id");
+    if (e.target.classList.contains("fa-check")) {
+      //? todoUl nin claslarında fa-check var mı
+  
+      e.target.parentElement.classList.toggle("checked");
+      //? Bu kod, tıklanan elementin parent elementinin sınıf listesinde "checked" sınıfının olup olmadığını kontrol eder. Eğer "checked" sınıfı yoksa, sınıfı parent elementin sınıf listesine ekler. Eğer "checked" sınıfı varsa, sınıfı parent elementin sınıf listesinden çıkarır. Bu parent elementin stilini değiştirir.
+  
+      //update array
+      // todoList.map((todo)=>{
+      //     if(todo.id == idAttr){
+      //         todo.completed = !todo.completed;
+      //     }
+      // });
+      todoList.forEach((todo) => {
+        if (todo.id == idAttr) {
+          todo.completed = !todo.completed;
+        }
+      });
