@@ -128,3 +128,9 @@ ul li {
     color: #eee;
     background-color: #531f27;
   }
+  @media screen and (max-width: 576px) {
+    li p {
+      font-size: 0.8rem;
+    }
+  }
+  
