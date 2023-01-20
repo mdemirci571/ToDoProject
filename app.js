@@ -17,3 +17,8 @@ const getTodoListFromLocalStorage = () => {
     createTodo(todo);
   });
 };
+//form => submit event vs. button => click event
+//form kullanıldıgında enter tusu otomatik olarak calısır.
+//input submit eventi; formdaki bilgileri locale yada baska bir sayfaya gönderirken tüm formu gönderir. sayfayı yeniler. bunu engellemek için "addBtn.addEventListener("click", (e) => {e.preventDefault();}" fonksiyonu kullanılır. bu sekilde submit eventi calısmaz ve buton normal bir buton gibi calışır. (28.satır)
+
+// form.addEventListener("submit", ()=>{})
