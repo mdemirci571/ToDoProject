@@ -125,3 +125,18 @@ todoUl.addEventListener("click", (e) => {
           todo.completed = !todo.completed;
         }
       });
+      //add updated array to localStorage
+    localStorage.setItem("todoList", JSON.stringify(todoList));
+} else if (e.target.classList.contains("fa-trash")) {
+  // alert("remove clicked");
+  //remove from UI
+  e.target.parentElement.remove();
+  //remove from Array
+  //id si ile silinmeyenleri filtrele array i update et ==> silineni array den remove
+  todoList = todoList.filter((todo) => todo.id != idAttr);
+  //add updated array to localStorage: güncel arrayi locale gönder.
+  localStorage.setItem("todoList", JSON.stringify(todoList));
+} else {
+  alert("other element clicked");
+}
+});
