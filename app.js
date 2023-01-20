@@ -90,3 +90,16 @@ const createTodo = (newTodo) => {
     p.innerText = text;
   
     li.appendChild(p);
+
+    //create remove icon
+  const removeIcon = document.createElement("i");
+  removeIcon.setAttribute("class", "fas fa-trash");
+  li.append(removeIcon);
+
+  // console.log(li);
+
+  //append li to ul
+  //prepend vs. append: append methodu, belirtilen elementin sonuna ekler. prepend methodu ise, belirtilen elementin başına ekler. Başa ekleme yönteminin Internet Explorer 11 ve altı tarafından desteklenmediğine dikkat edilmelidir.
+  // todoUl.append(li);
+  todoUl.prepend(li);
+};
