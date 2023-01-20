@@ -16,22 +16,18 @@
   </head>
 
   <body>
-    <div class="container">
-      <h1>To Do List</h1>
-      <img src="./img/todoicon.png" alt="" />
-      <h3>👩 ❤ Happy Wednesday 🤩 ⏰</h3>
-      <div class="giris">
-        <input type="text" class="add1" id="add1" placeholder="🖋 Add item..." />
-        <label class="add" id="add1" for="add">ADD</label>
-      </div>
-      <section class="task">
-        <h3>Tasks</h3>
-        <div class="etiketler">
-          <i class="a fa-solid fa-check"></i>
-          <input type="text" name="" id="text" />
-          <button class="edit">EDIT</button>
-          <button class="delete">DELETE</button>
-        </div>
+    <main class="container">
+      <header>My To do List</header>
+      <section class="todo-add">
+        <form class="todo-add">
+          <input
+            type="text"
+            id="todo-input"
+            placeholder="🖋 Add New Todo..."
+            autofocus
+          />
+          <button type="submit" id="todo-button">Add</button>
+        </form>
       </section>
 
       <!-- <ul>
