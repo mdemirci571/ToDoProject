@@ -72,92 +72,17 @@ header {
   overflow-x: hidden;
 }
 
-.giris {
-  /* display: flex;
-  justify-content: space-between; */
-  color: rgb(39, 39, 39);
+.todos ul {
+  list-style: none;
 }
 
-footer {
-  position: fixed;
-  text-align: center;
-  width: 100%;
-  bottom: 0px;
-  color: rgb(39, 39, 39);
-  background-color: rgb(253, 200, 122);
-}
-input {
-  padding: 1rem;
-  margin: 0rem auto;
-  width: 60%;
-  border: none;
-  font-size: 1.5rem;
-  border-radius: 10px;
-  color:rgb(39, 39, 39);
-}
-input:focus {
-  outline-width: 0;
-}
-label:hover {
-  cursor: pointer;
-}
-
-.add {
-  padding: 1rem;
-  background-color: rgb(253, 200, 122);
-  border-radius: 10px;
-}
-h1 {
-  text-decoration: underline;
-}
-
-.etiketler {
-  color: rgb(39, 39, 39);
-  background-color: white;
-  
-  margin: 1rem;
-  /* width: 42vw; */
-  border: none;
-  font-size: 1.5rem;
-  border-radius: 10px;
-  text-align: left;
+ul li {
+  background-color: #eee;
+  color: rgb(41, 41, 41);
+  font-weight: bold;
+  margin-bottom: 1rem;
   display: flex;
-  flex-wrap: nowrap;
   align-items: center;
-  
-}
-
-/* .etiketler input{
-  color: rgb(39, 39, 39);
-  background-color: white;
-  margin: 1rem;
-  border: none;
-  font-size: 1.5rem;
+  transition: all 0.5s;
   border-radius: 10px;
-  text-align: left;
-  
-} */
-
-.a {
-  color: rgb(14, 14, 60);
-cursor: pointer;
 }
-
-button{
-  /* padding: 1.4rem 1rem; */
-  background-color: white;
-  border-radius: 10px; 
-  border: none;
-  font-size: 1rem;
-  cursor: pointer;
-  font-weight: 700;
-  margin-left: 0.5rem;
-  }
-  section{
-    margin-top: 2rem;
-    
-  }
-  section h3{
-    text-align: left;
-    margin-left: 1rem;
-  }
