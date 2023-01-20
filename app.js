@@ -23,3 +23,15 @@ const getTodoListFromLocalStorage = () => {
 
 // form.addEventListener("submit", ()=>{})
 
+addBtn.addEventListener("click", (e) => {
+    //prevent form submit
+    e.preventDefault();
+    //?user input control: bos mu diye kontrol edildi
+    if (todoInput.value.trim() === "") {
+      alert("Please, enter new todo text!");
+      return; //? return kullandıgım için else e gerek kalmadı.
+    }
+    // else{
+    //     alert("continue");
+    // }
+    
