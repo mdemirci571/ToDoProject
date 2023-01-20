@@ -23,14 +23,6 @@ Project aims to create a simple To-Do App.
         |----App.js
 ```
 
-## Expected Outcome
-
-![Project 002 Snapshot](project_002_1.gif)
-![Project 002 Snapshot](project_002_2.gif)
-![Project 002 Snapshot](project_002_3.gif)
-![Project 002 Snapshot](project_002_4.gif)
-
-**⚠ Images are given as examples. You can use any design you want.**
 
 ## Objective
 
