@@ -65,3 +65,28 @@ addBtn.addEventListener("click", (e) => {
   e.target.closest("form").reset();
   //? saati p içine yazdırmak için bir degişkene atadım.
 });
+//? bu fonksiyonu global tanımlamamın nedeni daha sonra da kullanacagım.
+const createTodo = (newTodo) => {
+    //todo item creation
+    //alert("item was added");
+    //obj. dest. (ES6 => JS'e kazandırılan yapılar??)
+    const { id, completed, text } = newTodo;
+  
+    //create li
+    const li = document.createElement("li");
+    li.setAttribute("id", id);
+  
+    //add class with completed(status)
+    completed ? li.classList.add("checked") : "";
+  
+    //create check icon
+    const icon = document.createElement("i");
+    icon.setAttribute("class", "fas fa-check");
+    //append vs. appendChild: append(), appendChild()'den Farklı Olarak Aynı Anda Birden Çok Düğüm Nesnesi(Node Objects) Eklememize İzin Verir
+    li.append(icon);
+  
+    //create item text
+    const p = document.createElement("p");
+    p.innerText = text;
+  
+    li.appendChild(p);
