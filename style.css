@@ -110,3 +110,21 @@ ul li {
     width: 100%;
     padding: 0.4rem;
   }
+  li.checked .fa-check {
+    color: #00e676;
+  }
+  
+  li.checked p {
+    color: rgb(41, 41, 41);
+    text-decoration: line-through;
+    font-weight: normal;
+  }
+  
+  footer {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    bottom: 0px;
+    color: #eee;
+    background-color: #531f27;
+  }
