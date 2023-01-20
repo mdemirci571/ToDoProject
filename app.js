@@ -48,3 +48,20 @@ addBtn.addEventListener("click", (e) => {
   //? objeyi createTodo fonksiyonuna gönderdim
 
   createTodo(newTodo);
+
+  createTodo(newTodo);
+
+  //UPDATE TODO array
+  todoList.push(newTodo);
+  //?localStorage todoList Update; listeyi güncelledim
+  //localStorage vs. SessionStorage vs. Cookies: intervi sorusu
+
+  //!!!!!!!!stringify!!!!!!!!! SET yapılırken JSON.stringify kullanılmalı.(JSON.PARCEnin tersini yapıyor)
+  localStorage.setItem("todoList", JSON.stringify(todoList));
+  //?güncel listeyi localStorageye attım.
+  //event.target vs. event.currentTarget: intervi sorusu
+
+  //? formu resetledim.
+  e.target.closest("form").reset();
+  //? saati p içine yazdırmak için bir degişkene atadım.
+});
