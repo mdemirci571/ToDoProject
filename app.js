@@ -22,3 +22,14 @@ const getTodoListFromLocalStorage = () => {
 //input submit eventi; formdaki bilgileri locale yada baska bir sayfaya gönderirken tüm formu gönderir. sayfayı yeniler. bunu engellemek için "addBtn.addEventListener("click", (e) => {e.preventDefault();}" fonksiyonu kullanılır. bu sekilde submit eventi calısmaz ve buton normal bir buton gibi calışır. (28.satır)
 
 // form.addEventListener("submit", ()=>{})
+addBtn.addEventListener("click", (e) => {
+    //prevent form submit
+    e.preventDefault();
+    //?user input control: bos mu diye kontrol edildi
+    if (todoInput.value.trim() === "") {
+      alert("Please, enter new todo text!");
+      return; //? return kullandıgım için else e gerek kalmadı.
+    }
+    // else{
+    //     alert("continue");
+    // }
