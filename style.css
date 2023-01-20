@@ -61,7 +61,16 @@ header {
   cursor: pointer;
 }
 
+#todo-button:hover {
+  opacity: 0.5;
+}
 
+.todos {
+  width: 90%;
+  margin-top: 2rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
 
 .giris {
   /* display: flex;
