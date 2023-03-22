@@ -1,7 +1,6 @@
-# Live: https://mdemirci571.github.io/ToDoProject/
-
 # Project-ToDo App (JS-02)
 
+## Live: https://mdemirci571.github.io/ToDoProject/
 ## Description
 Project aims to create a simple To-Do App.
 
