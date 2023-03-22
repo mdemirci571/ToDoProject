@@ -1,7 +1,4 @@
-<p>Clarusway<img align="right"
-  src="https://secure.meetupstatic.com/photos/event/3/1/b/9/600_488352729.jpeg"  width="15px"></p>
-
-# Project-002 : To-Do App (JS-02)
+# Project-ToDo App (JS-02)
 
 ## Description
 Project aims to create a simple To-Do App.
@@ -76,7 +73,3 @@ Make a To-Do App as in the sample designs.
 - Step 4: Push your application into your own public repo on Github
 
 - Step 5: Deploy your application on Github template to showcase your app within your team.
-
-
-<center> ⌛ Happy Coding  ✍ </center>
-
